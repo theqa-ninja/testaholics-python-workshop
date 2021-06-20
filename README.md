@@ -4,8 +4,7 @@ This is an automation tutorial in the python language & using a framework built 
 ## Requirements
 Python 3.7 or later
 
-A python editor like [Visual Studio Code](https://
-code.visualstudio.com/Download)
+A python editor like [Visual Studio Code](https://code.visualstudio.com/Download)
 
 [Pylenium](https://docs.pylenium.io/getting-started/setup-pytest) installed
 
