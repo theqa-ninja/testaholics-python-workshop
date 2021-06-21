@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# let's sign into meetup!
+# let's search wikipedia!
 
 import logging
 
@@ -13,16 +13,23 @@ def test_wikipedia_search(py):
     # fill in a search for wikipedia
     py.get("input[type='search']").type('wikipedia', Keys.ENTER)
 
+    # locate wikipedia in the search links and click it
     py.get("a[href='https://www.wikipedia.org/']").click()
 
-    py.get("input[type='search']").type('quality ass')
+    # do a search for "quality as"
+    py.get("input[type='search']").type('quality as')
+
     py.wait(use_py=True).sleep(1)
+
+    # verify autocomplete appears and select "quality assurance"
     py.get("input[type='search']").type(Keys.DOWN, Keys.ENTER)
 
+    # let's confirm if the page contains a "Software Testing" link and click it
     py.contains('Software testing').click()
 
     url = py.url()
 
     logging.info(f'url: {url}')
 
+    # verify the url you're on contains software_testing
     assert 'Software_tesdting' in url
