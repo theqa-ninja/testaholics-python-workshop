@@ -8,13 +8,15 @@ A python editor like [Visual Studio Code](https://code.visualstudio.com/Download
 
 [Pylenium](https://docs.pylenium.io/getting-started/setup-pytest) installed
 
-## Automation sections
-1. Sign into a website
-1. Check your user profile that you’re signed in as
-1. Locate a specific event on the calendar
-1. Write a comment on the calendar
-1. Screenshot stuff
-1. Make sure you get a pass/fail result
+## Automation steps
+1. go to the best search engine
+1. search for `wikipedia`
+1. go to the wikipedia result
+1. click on the search bar
+1. begin typing `software assu`
+1. let auto-complete run and select the first result (`software assurance`)
+1. on the page, locate a hyperlink to `software testing`
+1. verify the URL you are on
 
 
 
@@ -30,10 +32,10 @@ Inside the Mac terminal do these steps
 ```
 pip install virtualenv
 virtualenv (##place a directory path here##)
-python3 -m venv (##place a directory path here##)
+source (##place a directory path here##)/bin/activate
 ```
-If this has been activated fine, you should see a (venv) at the front of your terminal line.<br>
-If you need to get out of the virtual mode, just run
+If this has been activated fine, you should see a (##directory_name##) at the front of your terminal line.<br>
+If you need to get out of the virtual mode, just run `deactivate`
 
 ### Setting up Pyleniumio on the Mac
 
@@ -55,6 +57,10 @@ pylenium init
 Inside the Windows command prompt, run these steps
 1. check your python version to make sure it's 3.7+<br>
     `python3 --version`
+    if it's not, please grab it from [Python](https://www.python.org/downloads/) or via the [Windows Store](https://www.microsoft.com/store/productId/9NJ46SX7X90P)
+1. make sure pip is installed
+    `pip --version`
+    if it's not, pelase install [pip](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
 1. install a python virtual environment
 1. create your virtual environment
 1. activate your virtual environment
