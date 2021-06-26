@@ -13,7 +13,7 @@ A python editor like [Visual Studio Code](https://code.visualstudio.com/Download
 1. search for `wikipedia`
 1. go to the wikipedia result
 1. click on the search bar
-1. begin typing `software assu`
+1. begin typing `quality as`
 1. let auto-complete run and select the first result (`software assurance`)
 1. on the page, locate a hyperlink to `software testing`
 1. verify the URL you are on

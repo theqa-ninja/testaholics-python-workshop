@@ -4,6 +4,7 @@
 from selenium.webdriver.common.keys import Keys
 
 
+# run this test with the command `python -m pytest tests/1-base-searching_test.py`
 def test_wikipedia_search(py):
     # visit the a search engine website
 

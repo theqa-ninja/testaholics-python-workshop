@@ -6,6 +6,7 @@ import logging
 from selenium.webdriver.common.keys import Keys
 
 
+# run this test with the command `python -m pytest tests/1-solution-searching_test.py`
 def test_wikipedia_search(py):
     # visit the a search engine website
     py.visit("https://bing.com/")
@@ -27,9 +28,11 @@ def test_wikipedia_search(py):
     # let's confirm if the page contains a "Software Testing" link and click it
     py.contains('Software testing').click()
 
+    py.screenshot('software_page.png')
+
     url = py.url()
 
     logging.info(f'url: {url}')
 
     # verify the url you're on contains software_testing
-    assert 'Software_tesdting' in url
+    assert 'Software_testing' in url
