@@ -8,7 +8,7 @@ A python editor like [Visual Studio Code](https://code.visualstudio.com/Download
 
 [Pylenium](https://docs.pylenium.io/getting-started/setup-pytest) installed
 
-## Automation steps
+## Automation Scenario 1
 1. go to the best search engine
 1. search for `wikipedia`
 1. go to the wikipedia result
@@ -16,9 +16,19 @@ A python editor like [Visual Studio Code](https://code.visualstudio.com/Download
 1. begin typing `quality as`
 1. let auto-complete run and select the first result (`software assurance`)
 1. on the page, locate a hyperlink to `software testing`
+1. take a screenshot
 1. verify the URL you are on
 
-
+## Automation Scenario 2
+1. go to wikipedia's main page
+1. click the "recent changes" link
+1. click on the 3rd entry that doesn't start with `User`
+1. on the wiki page, open up the `View History` link
+1. take a screenshot
+1. grab the date of the recent entry
+1. grab the date of the 2nd entry
+1. verify the latest entry is newer than the 2nd entry
+1. verify that the most recent entry is less than 24 hours old
 
 ## Setup steps for Mac
 
